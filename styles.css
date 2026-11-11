@@ -1,1 +1,265 @@
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffd6eb;
+    color: #30041b;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+#header {
+    width: 100%;
+    min-height: 50px;
+    background-color: #ff82c3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #30041b;
+}
+
+
+#name-container {
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+#pages-container {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    margin: 5px 15px;
+}
+
+.pages-btn {
+    margin-left: 10px;
+    width: 120px;
+    padding: 10px 0;
+    background-color: #ffbfd9;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #db8aab;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.pages-btn:hover {
+    background-color: #db8aab;
+}
+
+
+.body-container {
+    width: 100%;
+    min-height: calc(100vh - 102px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 25px 10px;
+    gap: 20px;
+}
+
+
+.content-container {
+    width: 45%;
+    min-width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+
+.content-title {
+    width: 100%;
+    min-height: 50px;
+    background-color: #db8aab;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.content-title h1 {
+    font-size: 28px;
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+.content-title h2 {
+    font-size: 24px;
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+.content-title h3 {
+    font-size: 20px;
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+
+.content-body {
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 20px;
+    display: block;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+.content-body p {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+
+.content-body h2 {
+    font-size: 22px;
+    font-family: Georgia, serif;
+}
+
+
+.content-body img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+
+.content-body ul,
+.content-body ol {
+    padding-left: 30px;
+}
+
+.content-body li {
+    margin-bottom: 8px;
+}
+
+
+.content-body a {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+.content-body a:hover {
+    color: royalblue;
+}
+
+
+#d3-visualization {
+    width: 100%;
+    min-height: 350px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+#d3-visualization svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.bar {
+    fill: pink;
+}
+
+.bar:hover {
+    fill: purple;
+    cursor: pointer;
+}
+
+.axis text {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#footer {
+    width: 100%;
+    min-height: 70px;
+    background-color: #ffbfd9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #30041b;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#footer h3 {
+    margin: 5px;
+}
+
+#footer p {
+    margin: 5px;
+}
+
+#footer a {
+    color: darkblue;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #header {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    #name-container {
+        margin: 5px;
+    }
+
+    #pages-container {
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .body-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-container {
+        width: 95%;
+        min-width: 0;
+    }
+
+    .pages-btn {
+        width: 100px;
+    }
+
+}
